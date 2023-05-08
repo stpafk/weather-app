@@ -1,3 +1,5 @@
+import landingPage from "./createPage"
 
 
-document.appendChild()
+
+document.appendChild(landingPage())
