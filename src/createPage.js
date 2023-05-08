@@ -1,5 +1,3 @@
-
-
 function landingPage() {
 
     const content = document.querySelector("#content");

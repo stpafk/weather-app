@@ -1,4 +1,6 @@
 import landingPage from "./createPage"
+import requestData from "./request";
+
 
 document.body.appendChild(landingPage());
 
@@ -7,7 +9,9 @@ const searchBar = document.querySelector('.search');
 
 input.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
-        console.log('not yet')
+        let data = input.value;
+        requestData(data);
+        input.innerHTML = "";
     }
 })
 
