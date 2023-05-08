@@ -22,19 +22,24 @@ function landingPage() {
     innerContainer.classList = "inner-container";
     mainContainer.appendChild(innerContainer);
 
+    const search = document.createElement('div');
+    search.classList = "searchDiv";
+    
+    innerContainer.appendChild(search);
+
     const inputCity = document.createElement("input");
     inputCity.type = "text";
     inputCity.classList = "input-city";
     inputCity.placeholder = "Which city?"
 
-    innerContainer.appendChild(inputCity);
+    search.appendChild(inputCity);
 
     const divSearch = document.createElement("div");
     divSearch.classList = "search";
     divSearch.style = "cursor: pointer";
     divSearch.innerHTML = "";
 
-    innerContainer.appendChild(divSearch);
+    search.appendChild(divSearch);
 
     // add more features, for now keep only temperature and city
 
