@@ -4,7 +4,7 @@ import './style.css'
 
 
 document.body.appendChild(landingPage());
-
+requestData("Medicine Hat");
 const input = document.querySelector('.input-city');
 const searchBar = document.querySelector('.search');
 

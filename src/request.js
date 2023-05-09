@@ -12,7 +12,7 @@ async function requestData(data) {
         const cit = document.querySelector(".city-name");
 
         cond.innerHTML = `${response.current.condition.text}`;
-        cit.innerHTML = `${response.location.name}`
+        cit.innerHTML = `${response.location.name}-${response.location.country}`
         temp.innerHTML =  `${response.current.temp_c}°C`;
     })
     .catch(function(error) {

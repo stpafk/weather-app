@@ -38,21 +38,26 @@
   .inner-container h1{
     display: flex;
     flex-direction: column;
-    align-items:end;
+    align-items:start;
     justify-content: center;
     padding-top: 2vh;
-    padding-right: 5vw;
   }
   
   .inner-container .condition {
     font-style: italic;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    padding-left: 2.5vw;
   }
   
   .inner-container .city-name {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
+    padding-left: 5vw;
   }
   
+  .inner-container .temperature-div {
+    padding-left: 5vw;
+  }
+
   .inner-container .temperature-div h1 {
     margin: 0;
   }
