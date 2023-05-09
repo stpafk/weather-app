@@ -1,5 +1,6 @@
 import landingPage from "./createPage"
 import requestData from "./request";
+import './style.css'
 
 
 document.body.appendChild(landingPage());

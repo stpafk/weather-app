@@ -13,7 +13,7 @@ async function requestData(data) {
 
         cond.innerHTML = `${response.current.condition.text}`;
         cit.innerHTML = `${response.location.name}`
-        temp.innerHTML =  `${response.current.temp_c}`;
+        temp.innerHTML =  `${response.current.temp_c}°C`;
     })
     .catch(function(error) {
         console.log(error);
