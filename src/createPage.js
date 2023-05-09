@@ -27,6 +27,7 @@ function landingPage() {
 
     const labelSearch = document.createElement('label');
     labelSearch.classList = "input-label";
+    labelSearch.innerHTML = "Input your localization: "
 
     search.appendChild(labelSearch);
 
@@ -48,6 +49,8 @@ function landingPage() {
     const displayCondition = document.createElement('p');
     displayCondition.classList = "condition";
     
+    
+
     innerContainer.appendChild(displayCondition);
 
     const displayCity = document.createElement('h1');
@@ -74,9 +77,10 @@ function landingPage() {
 
     const footerText = document.createElement('p');
     footerText.classList = "footer-text";
+    footer.innerHTML = "Created by stpafk"
 
-    footerA = document.createElement('a');
-    footerA.
+    const footerA = document.createElement('a');
+    footer.appendChild(footerA);
     footer.appendChild(footerText)
 
     content.appendChild(nav);
