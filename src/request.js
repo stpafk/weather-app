@@ -8,6 +8,11 @@ async function requestData(data) {
     })
     .then(function(response) {
         const temp = document.querySelector(".temperature-display");
+        const cond = document.querySelector(".condition");
+        const cit = document.querySelector(".city-name");
+
+        cond.innerHTML = `${response.current.condition.text}`;
+        cit.innerHTML = `${response.location.name}`
         temp.innerHTML =  `${response.current.temp_c}`;
     })
     .catch(function(error) {
