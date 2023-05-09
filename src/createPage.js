@@ -46,10 +46,17 @@ function landingPage() {
     search.appendChild(divSearch);
 
 
-    const displayCondition = document.createElement('p');
-    displayCondition.classList = "condition";
+    const displayCondition = document.createElement('div');
+    displayCondition.classList = "div-condition";
     
-    
+    const conditionP = document.createElement('p');
+    conditionP.classList = "condition";
+
+    displayCondition.appendChild(conditionP);
+
+    const img = document.createElement('img');
+    img.src = "https://cdn.weatherapi.com/weather/64x64/day/116.png";
+    displayCondition.appendChild(img);
 
     innerContainer.appendChild(displayCondition);
 

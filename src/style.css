@@ -50,15 +50,11 @@
     font-size: 1.4rem;
     padding-left: 2.5vw;
   }
-  /*
-  .inner-container .image {
-    margin-left: 75%;
-    padding: 0;
-    height: 20%;
-    display: flex;
-    justify-content: right;
+  
+  .inner-container .condition img {
+    padding-left: 40px;
   }
-  */
+
   .inner-container .city-name {
     font-size: 1.2rem;
     padding-left: 5vw;
