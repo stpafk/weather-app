@@ -25,6 +25,11 @@ function landingPage() {
     
     innerContainer.appendChild(search);
 
+    const labelSearch = document.createElement('label');
+    labelSearch.classList = "input-label";
+
+    search.appendChild(labelSearch);
+
     const inputCity = document.createElement("input");
     inputCity.type = "text";
     inputCity.classList = "input-city";
@@ -39,7 +44,6 @@ function landingPage() {
 
     search.appendChild(divSearch);
 
-    // add more features, for now keep only temperature and city
 
     const displayCondition = document.createElement('p');
     displayCondition.classList = "condition";
@@ -61,7 +65,19 @@ function landingPage() {
 
     divDisplayTemperature.appendChild(temperature);
 
+    const lastUpdate = document.createElement('h6');
+    lastUpdate.classList = "last-update";
+
+    divDisplayTemperature.appendChild(lastUpdate);
+
     const footer = document.createElement('footer');
+
+    const footerText = document.createElement('p');
+    footerText.classList = "footer-text";
+
+    footerA = document.createElement('a');
+    footerA.
+    footer.appendChild(footerText)
 
     content.appendChild(nav);
     content.appendChild(main);
