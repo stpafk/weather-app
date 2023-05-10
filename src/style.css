@@ -55,8 +55,11 @@
     display: flex;
   }
 
-  .inner-container .div-condition:last-child {
-    align-items: right;
+  .inner-container .div-condition img {
+    height: 64px;
+    width: 64px;
+    position: absolute;
+    padding-left: 20vw;
   }
 
   .inner-container .city-name {

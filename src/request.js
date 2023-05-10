@@ -11,12 +11,13 @@ async function requestData(data) {
         const cond = document.querySelector(".condition");
         const cit = document.querySelector(".city-name");
         const lastUpdate = document.querySelector(".last-update");
+        const imgDiv = document.querySelector(".image");
 
         cond.innerHTML = `${response.current.condition.text}`;
         cit.innerHTML = `${response.location.name}-${response.location.country}`
         temp.innerHTML =  `${response.current.temp_c}°C`;
         lastUpdate.innerHTML = `Last updated: ${response.current.last_updated.slice(10, 16)} TZ: (${response.location.tz_id})`
-        
+        imgDiv.src = `https:${response.current.condition.icon}`
     })
     .catch(function(error) {
         console.log(error);
