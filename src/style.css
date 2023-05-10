@@ -51,8 +51,12 @@
     padding-left: 2.5vw;
   }
   
-  .inner-container .condition img {
-    padding-left: 40px;
+  .inner-container .div-condition {
+    display: flex;
+  }
+
+  .inner-container .div-condition:last-child {
+    align-items: right;
   }
 
   .inner-container .city-name {

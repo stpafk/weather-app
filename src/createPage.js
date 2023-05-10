@@ -54,7 +54,7 @@ function landingPage() {
 
     displayCondition.appendChild(conditionP);
 
-    const img = document.createElement('i');
+    const img = document.createElement('img');
     img.src = "https://cdn.weatherapi.com/weather/64x64/day/116.png";
     displayCondition.appendChild(img);
 
