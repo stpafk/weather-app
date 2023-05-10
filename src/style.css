@@ -1,5 +1,6 @@
 :root {
     font-family: georgia;
+    color: #ecfeff;
   }
   
   body {
@@ -11,16 +12,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: lightblue;
+    background-color: #1e1b4b;
     height: 15vh;
     margin: 0;
+    border-bottom: 5px solid #04012c;
   }
   
   main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: #082f49;
     height: 80vh;
   }
   
@@ -31,7 +33,11 @@
     max-width: 60%;
     padding: 2vh;
     border: 4px solid darkblue;
-    background-color: lightblue;
+    background-color: #1e1b4b;
+    border: 5px solid #04012c;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 1, 22, 0.4);
+    
     /* add some shadow background*/
   }
   
@@ -88,9 +94,10 @@
   }
   
   footer {
-    background-color: lightblue;
+    background-color: #1e1b4b;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 5vh;
+    height: 4vh;
+    border-top: 4px solid #04012c;
   }
