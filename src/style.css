@@ -56,10 +56,11 @@
   }
 
   .inner-container .div-condition img {
-    height: 64px;
-    width: 64px;
+    height: 128px;
+    width: 128px;
     position: absolute;
-    padding-left: 20vw;
+    left: 40%;
+    top: 30%
   }
 
   .inner-container .city-name {
