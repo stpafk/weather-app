@@ -16,8 +16,12 @@ async function requestData(data) {
         cond.innerHTML = `${response.current.condition.text}`;
         cit.innerHTML = `${response.location.name}-${response.location.country}`
         temp.innerHTML =  `${response.current.temp_c}°C`;
-        lastUpdate.innerHTML = `Last updated: ${response.current.last_updated.slice(10, 16)} TZ: (${response.location.tz_id})`
-        imgDiv.src = `https:${response.current.condition.icon}`
+        lastUpdate.innerHTML = `Last updated: ${response.current.last_updated.slice(10, 16)} TZ: (${response.location.tz_id})`;
+        if (response.current.is_day === 1) {
+            imgDiv.src = `https://cdn.weatherapi.com/weather/128x128/${response.current.condition.icon.slice(-11)}`;
+        } else {
+            imgDiv.src = `https://cdn.weatherapi.com/weather/128x128/${response.current.condition.icon.slice(-13)}`;
+        }
     })
     .catch(function(error) {
         console.log(error);
