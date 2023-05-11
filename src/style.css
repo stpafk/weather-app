@@ -17,6 +17,11 @@
     margin: 0;
     border-bottom: 5px solid #04012c;
   }
+
+  nav .nav-img {
+    padding-right: 4px;
+    
+  }
   
   main {
     display: flex;

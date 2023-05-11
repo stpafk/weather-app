@@ -5,6 +5,12 @@ function landingPage() {
     const nav = document.createElement('nav');
     nav.classList = "nav-bar";
 
+    const navImg = document.createElement('img');
+    navImg.classList = "nav-img";
+    navImg.src = "https://img.icons8.com/?size=58&id=lnlY2wBk8BW5&format=png";
+
+    nav.appendChild(navImg);
+
     const navH1 = document.createElement('h1');
     navH1.classList = "nav-bar title";
     navH1.innerHTML = "Weather App";
