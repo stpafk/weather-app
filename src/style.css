@@ -50,6 +50,18 @@
     justify-content: center;
     padding-top: 2vh;
   }
+
+  .input-city {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    padding-top: 0.5rem;
+  }
+
+  .input-city:focus {
+    outline: none;
+  }
   
   .inner-container .condition {
     font-style: italic;
@@ -59,6 +71,8 @@
   
   .inner-container .div-condition {
     display: flex;
+    max-height: 60px;
+    text-shadow: 2px 4px rgba(0, 1, 22, 0.4);
   }
 
   .inner-container .div-condition img {
@@ -78,8 +92,14 @@
     padding-left: 5vw;
   }
 
-  .inner-container .temperature-div h1 {
-    margin: 0;
+  @keyframes slideUp {
+    0% {
+      font-size: 2rem;
+    }
+
+    100% {
+      font-size: 4rem;
+    }
   }
   
   .inner-container .searchDiv {
@@ -90,6 +110,8 @@
   }
   
   .inner-container .temperature-div h1 {
+      animation: 0.8s ease-in-out slideUp;
+      margin: 0;
       font-size: 4rem;
   }
   

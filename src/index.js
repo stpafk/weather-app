@@ -10,9 +10,11 @@ const searchBar = document.querySelector('.search');
 
 input.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
-        let data = input.value;
-        input.value = "";
-        requestData(data);
+        if (input.value !== 0) {
+            let data = input.value;
+            input.value = "";
+            requestData(data);
+        }
     }
 })
 
