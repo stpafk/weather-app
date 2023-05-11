@@ -85,11 +85,23 @@ function landingPage() {
 
     const footerText = document.createElement('p');
     footerText.classList = "footer-text";
-    footer.innerHTML = "Created by stpafk"
+    footerText.innerHTML = "Created by ";
 
     const footerA = document.createElement('a');
+    footerA.classList = "github-name";
+    footerA.style = "padding-left: 3px; color:white;";
+    footerA.href = "https://github.com/stpafk";
+    footerA.innerHTML = "stpafk";
+
+    const footerImg = document.createElement('img');
+    footerImg.classList = "git-hub-img";
+    footerImg.style = "height: 60%; padding-left: 5px; border:none; border-radius: 20px;";
+    footerImg.src = "https://avatars.githubusercontent.com/u/117909784?s=40&v=4";
+
+
+    footer.appendChild(footerText);
     footer.appendChild(footerA);
-    footer.appendChild(footerText)
+    footer.appendChild(footerImg);
 
     content.appendChild(nav);
     content.appendChild(main);
