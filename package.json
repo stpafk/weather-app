@@ -2,6 +2,7 @@
   "name": "weather-app",
   "version": "1.0.0",
   "description": "weather app using weather api",
+  "homepage": "https://stpafk.github.io/weather-app",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
