@@ -53,12 +53,12 @@ main {
 
 .inner-container p,
 .inner-container .temperature-display,
-.inner-container h1{
+.inner-container h1 {
   display: flex;
   flex-direction: column;
   align-items:start;
   justify-content: center;
-  padding-top: 5vh;
+  padding-top: 2vh
 }
 
 .input-city {
@@ -128,13 +128,20 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;;
+  align-items: center;
 }
 
 .inner-container .temperature-div h1 {
     animation: 0.8s ease-in-out slideUp;
     margin: 0;
     font-size: 4rem;
+}
+
+@media (max-width:480px) {
+  .inner-container .temperature-div h1 {
+    font-size: 3.5rem;
+    margin: 0;
+  }
 }
 
 footer {
