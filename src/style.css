@@ -39,6 +39,7 @@ main {
 }
 
 .weather-container {
+  position: relative;
   max-height: 90%;
   max-width: 60%;
   padding: 2vh;
@@ -91,8 +92,8 @@ main {
   height: 128px;
   width: 128px;
   position: absolute;
-  left: 30%;
-  top: 10%
+  left: -20%;
+  top: -10%;
 }
 
 @media (max-width:480px) {
@@ -100,8 +101,8 @@ main {
   height: auto;
    width: auto;
   position: absolute; 
-  top: 20%;
-  left: -5%;
+  left: -20%;
+  top: -10%;
 } 
 }
 
