@@ -1,6 +1,14 @@
 import Handler from "./Handler";
+import { useState } from "react";
 
 function App() {
+
+    const [city, setCity] = useState("Curitiba");
+
+    function changeState() {
+        let city = document.querySelector(".container.input").value;
+        setCity(city);
+    }
 
     return(
         <>
@@ -10,7 +18,12 @@ function App() {
           </header>
           <main>
               <section className="weather container">
-                    <Handler />
+                    <div className="container search">
+                        <label htmlFor="search">Input the localization</label>
+                        <input className="container input" type="text" placeholder="Example: New York"/>
+                        <button onClick={changeState}>Search</button>
+                    </div>
+                    <Handler city={city}/>
               </section>
           </main>
           <footer>
