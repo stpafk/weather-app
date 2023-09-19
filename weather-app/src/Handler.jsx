@@ -12,7 +12,7 @@ function Handler(props) {
             console.log(data);
             setTemp(data.current.temp_c)
         })
-    })
+    }, [props.city])
     
     return(
         <h1>{temp}</h1>
