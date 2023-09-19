@@ -1,18 +1,10 @@
 import { useEffect, useState } from "react";
 
 function Handler(props) {
-    
-    const [obj, setObj] = useState(null)
 
-    useEffect(() => {
-        fetch(`https://api.weatherapi.com/v1/current.json?key=&q=${props.city}`)
-        .then((response) => response.json())
-        .then((data) => {
-            console.log(data);
-            setObj({...data})})
-    }, [props.city])
+    const obj = props.obj;
 
-    if (obj === null) {
+    if (props.obj === null) {
         return <h1>Fetching...</h1>
     }
 
