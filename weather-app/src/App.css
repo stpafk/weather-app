@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Outfit:wght@200&family=Space+Grotesk:wght@500&display=swap');
+
+:root {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: rgb(106, 155, 205);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+}
+
+.header__main {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-style: italic;
+    z-index: 2;
+}
+
+.header__main > i {
+    font-size: 48px;
+    color: rgb(255, 255, 48);
+    padding-right: 10px;
+}
+
+header > img {
+    position: absolute;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+}
