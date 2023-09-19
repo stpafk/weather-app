@@ -1,4 +1,4 @@
-import Handler from "./Handler";
+import Handler from "./components/Handler";
 import { useState } from "react";
 
 function App() {
