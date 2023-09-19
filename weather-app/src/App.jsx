@@ -3,7 +3,7 @@ import { useState } from "react";
 
 function App() {
 
-    const [city, setCity] = useState("Curitiba");
+    const [city, setCity] = useState("Medicine Hat");
 
     function changeState() {
         let city = document.querySelector(".container.input").value;
