@@ -5,7 +5,7 @@ function Handler(props) {
     const [obj, setObj] = useState(null)
 
     useEffect(() => {
-        fetch(`https://api.weatherapi.com/v1/current.json?key=ac11e311dc59479c849114218230505&q=${props.city}`)
+        fetch(`https://api.weatherapi.com/v1/current.json?key=&q=${props.city}`)
         .then((response) => response.json())
         .then((data) => {
             console.log(data);

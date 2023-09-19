@@ -2,7 +2,7 @@
 
 :root {
     font-family: 'Space Grotesk', sans-serif;
-    background-color: rgb(106, 155, 205);
+    background: linear-gradient(to left, rgb(25, 176, 226), rgb(176, 235, 255));
 }
 
 * {
@@ -33,9 +33,20 @@ header {
     padding-right: 10px;
 }
 
+@keyframes moveAround {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: 90%;
+    }
+}
+
 header > img {
+    left: 0%;
     position: absolute;
     z-index: 1;
     width: 150px;
     height: 150px;
+    animation: 15s linear 1s infinite alternate moveAround;
 }
