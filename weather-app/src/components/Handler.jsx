@@ -3,16 +3,7 @@ import { useEffect, useState } from "react";
 function Handler(props) {
 
     const obj = props.obj;
-    const [forecast, setForecast] = useState(null);
-
-    useEffect(() => {
-        fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${obj === null ? "Medicine Hat" : obj.city}&units=metric&appid=1b03a67987404c2ea16169c823e9c21d`)
-            .then((response) => response.json())
-            .then((data) => {
-                setForecast(data);
-                console.log(data)
-            })
-    }, [])
+    const forecast = props.forecast;
 
     if (props.obj === null) {
         return <h1>Fetching...</h1>
