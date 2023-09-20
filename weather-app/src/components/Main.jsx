@@ -12,12 +12,12 @@ function Main() {
         .then((response) => response.json())
         .then((data) => {
             setObj({...data})
+            console.log(data)
             return fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric%cnt=3&appid=1b03a67987404c2ea16169c823e9c21d`)
         })
         .then((response) => response.json())
         .then((data) => {
             setForecast(data);
-            console.log(data)
         })
     }, [city])
 
