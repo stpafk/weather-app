@@ -53,7 +53,6 @@ header > img {
 
 main > section {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     
@@ -62,4 +61,35 @@ main > section {
     border-radius: 2rem;
     margin: 0 10% 0 10%;
     padding: 2rem;
+}
+
+
+section > .container.search {
+    margin: 0 auto;
+}
+
+.weather.main {
+    display: flex;
+    flex-direction: row;
+    padding: 4%;
+}
+
+.weather.main > .weather.general {
+    margin-right: 10%;
+    padding-right: 2%;
+}
+
+.weather.general > .general__weather {
+    align-items: center;
+    font-size: 48px;
+    margin-bottom: 10%;
+}
+
+.weather.general > h1 {
+    font-size: 32px;
+}
+
+.weather.general > h3 {
+    font-size: 16px;
+    font-style: italic;
 }
