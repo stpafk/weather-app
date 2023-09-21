@@ -6,7 +6,7 @@ function Handler(props) {
     const obj = props.obj;
     const forecast = props.forecast;
 
-    if (props.obj === null) {
+    if (!obj) {
         return <h1>Fetching...</h1>
     }
 
@@ -15,8 +15,8 @@ function Handler(props) {
             <div className="weather general">
                 <div className="general__weather">
                     <span className="icon">{obj.current.temp_c > 16 ? 
-                    <i class="bi bi-thermometer-sun"></i> :
-                    <i class="bi bi-thermometer-snow"></i>}</span>
+                    <i className="bi bi-thermometer-sun"></i> :
+                    <i className="bi bi-thermometer-snow"></i>}</span>
                     <span className="text">{obj.current.temp_c}°C</span>
                 </div>
                 <h3>{obj.current.condition.text}</h3>
