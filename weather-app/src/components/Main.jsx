@@ -24,11 +24,7 @@ function Main() {
         .then((data) => {
             setObj({...data})
             console.log(data)
-            return fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric%cnt=3&appid=1b03a67987404c2ea16169c823e9c21d`)
-        })
-        .then((response) => response.json())
-        .then((data) => {
-            setForecast(data);
+            console.log(obj.current.condition.icon.slice(34))
         })
     }, [city])
 
@@ -40,11 +36,12 @@ function Main() {
     return(
         <main>
               <section className="weather container">
-                    <div className="container search">
+              <img src={obj ? `//cdn.weatherapi.com/weather/128x128${obj.current.condition.icon.slice(34)}` : ""} alt="condition" />
+                    <form className="container search" onSubmit={() => event.preventDefault()}>
                         <label htmlFor="search">Input localization: </label>
                         <input className="container input" id={error} type="text" placeholder="Example: New York"/>
-                        <button onClick={changeState}><i class="bi bi-search"></i></button>
-                    </div>
+                        <button onClick={changeState} type="submit"><i class="bi bi-search"></i></button>
+                    </form>
                     <Handler obj={obj}/>
               </section>
           </main>
