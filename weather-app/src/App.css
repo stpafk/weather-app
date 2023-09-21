@@ -75,7 +75,7 @@ section > .container.search {
 }
 
 .weather.main > .weather.general {
-    margin-right: 10%;
+    margin: 0 15%;
     padding-right: 2%;
 }
 
@@ -92,4 +92,11 @@ section > .container.search {
 .weather.general > h3 {
     font-size: 16px;
     font-style: italic;
+}
+
+.weather.main > ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 24px;
 }

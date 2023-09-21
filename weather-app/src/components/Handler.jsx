@@ -28,18 +28,18 @@ function Handler(props) {
                 <li className="extra__li condition">
                     <span className="icon"><img src={obj.current.condition.icon} 
                     alt={obj.current.condition.text} /></span>
-                    <span className="txt">{obj.current.condition.text}</span>
+                    <span className="text">{obj.current.condition.text}</span>
                 </li>
-                <li className="extra__li">
-                    <span className="icon"><img src={weather} 
+                <li className="extra__li">Feels Like
+                    <span className="icon"><img src={weather}
                     alt="person standing next to termomether" /></span>
                     <span className="txt">{obj.current.feelslike_c}°C</span>
                 </li>
-                <li className="extra__li">
+                <li className="extra__li">Humidity
                     <span className="icon"><img src={humidity} alt="humidity icon" /></span>
                     <span className="txt">{obj.current.humidity}%</span>
                 </li>
-                <li className="extra__li">
+                <li className="extra__li">Wind
                     <span className="icon"><i class="bi bi-wind"></i></span>
                     <span className="txt">{obj.current.wind_kph}K/PH</span>
                 </li>
