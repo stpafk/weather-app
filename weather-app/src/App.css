@@ -81,8 +81,8 @@ section > .container.search {
 
 .weather.general > .general__weather {
     align-items: center;
-    font-size: 48px;
-    margin-bottom: 10%;
+    font-size: 60px;
+    margin-bottom: 15%;
 }
 
 .weather.general > h1 {
@@ -99,4 +99,26 @@ section > .container.search {
     flex-direction: column;
     list-style-type: none;
     font-size: 24px;
+}
+
+.weather.main ul > li {
+    display: flex;
+}
+
+.weather.main ul > label {
+    text-align: center;
+    font-size: 22px;
+    margin: 2% 0;
+}
+
+.weather.main ul > li > .icon {
+    font-size: 32px;
+}
+
+.weather.main ul > li > .icon > img {
+    width: 32px;
+}
+
+.weather.main ul > li > .txt {
+    padding-left: 5%
 }
