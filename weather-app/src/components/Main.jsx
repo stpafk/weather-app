@@ -30,9 +30,9 @@ function Main() {
         <main>
               <section className="weather container">
                     <div className="container search">
-                        <label htmlFor="search">Input the localization</label>
+                        <label htmlFor="search">Input localization: </label>
                         <input className="container input" type="text" placeholder="Example: New York"/>
-                        <button onClick={changeState}>Search</button>
+                        <button onClick={changeState}><i class="bi bi-search"></i></button>
                     </div>
                     <Handler obj={obj} forecast={forecast}/>
               </section>
