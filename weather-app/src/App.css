@@ -50,8 +50,8 @@ header > img {
     height: 150px;
     animation: 15s linear 1s infinite alternate moveAround;
 }
-
 main > section {
+    position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -62,6 +62,13 @@ main > section {
     margin: 0 10% 0 10%;
     padding: 2rem;
 }
+
+section > img {
+    position: absolute;
+    width: 128px;
+    height: 128px;
+}
+
 
 
 section > .container.search {
@@ -163,7 +170,7 @@ section > .container.search {
 }
 
 footer {
-    margin: 5% 0;
+    margin-top: 6%;
     position: relative;
 }
 
