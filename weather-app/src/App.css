@@ -70,12 +70,27 @@ section > .container.search {
 
 .container.input {
     width: 40%;
-    margin-left: 2%;
+    margin: 0 2%;
     background: transparent;
     border: none;
     border-bottom: 4px solid black;
     font-family: 'Space Grotesk', sans-serif;
     font-size: 16px;
+}
+
+.container.input#error {
+    background-color: #fbd4d4;
+    animation: shake 300ms;
+}
+
+@keyframes shake {
+    25%{
+        transform: translate(4px);
+    } 50% {
+        transform: translate(-4px);
+    } 75% {
+        transform: translate(4px);
+    }
 }
 
 .container.input:focus {
