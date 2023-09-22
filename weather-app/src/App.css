@@ -184,10 +184,14 @@ section > .container.search {
 @media (max-width: 480px) {
     main > section {
         padding: 5%;
+        margin: 10%;
     }
     section > img {
-        width: 64px;
-        height: 64px;
+        top: -10%;
+        left: -20%;
+        transform: rotate(-30deg);
+        width: 128px;
+        height: 128px;
     }
     section > .container.search {
         margin: 0 20%;
@@ -212,6 +216,14 @@ section > .container.search {
     .weather.general > h3 {
         font-size: 12px;
     }
+    .weather.main > ul {
+        padding: 20% 10%;
+        font-size: 16px;
+    }
+    .weather.main ul > label {
+        font-size: 16px;
+    }
+
 }
 
 footer {
