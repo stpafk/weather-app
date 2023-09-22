@@ -6,6 +6,7 @@
 }
 
 * {
+    max-height: 120vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -291,4 +292,36 @@ footer > .clouds[id="2"] {
     top: -160%;
     left: 49%;
     border-radius: 100%;
+}
+
+@media (max-width: 480px) {
+
+    main {
+        margin-bottom: 10%;
+    }
+
+    footer > .wrapper {
+        padding: 2%;
+        font-size: 12px;
+    }
+
+    footer > .clouds[id="0"] {
+        left: 25%;
+        top: 0%;
+        width: 200px;
+        height: 60px;
+    }
+    footer > .clouds[id="1"] {
+        height: 50px;
+        width: 50px;
+        top: -50%;
+        left: 35%;
+    }
+
+    footer > .clouds[id="2"] {
+        height: 70px;
+        width: 70px;
+        top: -70%;
+        left: 47%;
+    }
 }
