@@ -4,7 +4,6 @@ import humidity from "../assets/low-humidity.svg"
 function Handler(props) {
 
     const obj = props.obj;
-    const forecast = props.forecast;
 
     if (!obj) {
         return <h1>Fetching...</h1>
@@ -39,7 +38,7 @@ function Handler(props) {
                 </li>
                 <label htmlFor="Wind">Wind</label>
                 <li className="extra__li">
-                    <span className="icon"><i class="bi bi-wind"></i></span>
+                    <span className="icon"><i className="bi bi-wind"></i></span>
                     <span className="txt">{obj.current.wind_kph}K/PH</span>
                 </li>
             </ul>

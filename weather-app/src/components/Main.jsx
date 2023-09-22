@@ -13,8 +13,8 @@ function Main() {
             throw Error(response.statusText);
         }
 
-        setError("")
-        return response
+        setError("");
+        return response;
     }
 
     useEffect(() => {
@@ -23,10 +23,8 @@ function Main() {
         .then((response) => response.json())
         .then((data) => {
             setObj({...data})
-            console.log(data)
-            console.log(obj.current.condition.icon.slice(34))
         })
-    }, [city])
+    }, [city, obj])
 
     function changeState() {
         let city = document.querySelector(".container.input").value;
@@ -40,7 +38,7 @@ function Main() {
                     <form className="container search" onSubmit={() => event.preventDefault()}>
                         <label htmlFor="search">Input localization: </label>
                         <input className="container input" id={error} type="text" placeholder="Example: New York"/>
-                        <button onClick={changeState} type="submit"><i class="bi bi-search"></i></button>
+                        <button onClick={changeState} type="submit"><i className="bi bi-search"></i></button>
                     </form>
                     <Handler obj={obj}/>
               </section>
