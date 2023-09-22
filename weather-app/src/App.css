@@ -50,6 +50,20 @@ header > img {
     height: 150px;
     animation: 15s linear 1s infinite alternate moveAround;
 }
+
+@media (max-width: 480px) {
+    .header__main > h1 {
+        font-size: 24px
+    }
+    .header__main > i {
+        font-size: 32px;
+    }
+    header > img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
 main > section {
     position: relative;
     display: flex;
@@ -68,8 +82,6 @@ section > img {
     width: 128px;
     height: 128px;
 }
-
-
 
 section > .container.search {
     margin: 0 30%;
@@ -130,7 +142,7 @@ section > .container.search {
     font-size: 60px;
     margin-bottom: 15%;
 }
-
+/**/
 .weather.general > h1 {
     font-size: 32px;
 }
@@ -167,6 +179,39 @@ section > .container.search {
 
 .weather.main ul > li > .txt {
     padding-left: 5%
+}
+
+@media (max-width: 480px) {
+    main > section {
+        padding: 5%;
+    }
+    section > img {
+        width: 64px;
+        height: 64px;
+    }
+    section > .container.search {
+        margin: 0 20%;
+    }
+    .container.input {
+        font-size: 12px;
+        width: 80%;
+    }
+    .weather.main {
+        padding: 2%;
+    }
+    .weather.main > .weather.general {
+        margin: 10% 2%;
+    }
+    .weather.general > .general__weather {
+        margin: 2% 0 20% 0;
+        font-size: 40px;
+    }
+    .weather.general > h1 {
+        font-size: 24px;
+    }
+    .weather.general > h3 {
+        font-size: 12px;
+    }
 }
 
 footer {
